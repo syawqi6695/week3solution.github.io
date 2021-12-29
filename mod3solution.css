@@ -1,118 +1,63 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    font-size: 16px;
-    color: grey;
-    background-color: rgb(225 228 230);
-    font-family:'robot','oxygen', sans-serif;  
+.navbar-brand {
+    font-size: 3em;
+    color: #6151bb;
+       
 }
 
-/** Header **/
-#header-nav {
-    background-color: black;
-    border-radius: 0;
-    border: 0;
-    padding-bottom: 15px;
+#our-menu {
+    font-size: 60px;
+    padding: 20px;
 }
 
-/** Restaurant Name **/
-.navbar-brand h1 {
+.menu{
+    height: 750px;
+    background-color: white;
+    border: 8px black solid; 
+}
+
+#title {
+    font-weight: bold;
     font-size: 30px;
-    font-family: 'Roboto', 'Oxygen', sans-serif; 
-    color: #006400;
-    outline-color: #fff;
-    text-shadow: 1px 1px 1px #fff; 
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 1.4;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus {
-    text-decoration: none; 
-}
-
-.text-center {
-    text-align: center;
-    font-size: 22px;
-    color: rgb(83 71 72);
-    font-family: 'Roboto', 'Oxygen', sans-serif; 
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 15px;
-    color: rgb(30 30 25);
-    font-family: 'Roboto', 'Oxygen', sans-serif; 
-    font-weight: normal; 
-}
-
-.content-box {
-    background-color: grey;
-    color: rgb(30 30 25);
-    border: 3px solid rgb(83 71 72);
-    margin: 20px;
-    margin-bottom: 30px;
-    padding: 10px;
-    box-shadow: 0 0 20px #3F0C1F;
+/****Medium Devices****/
+@media (min-width: 1200px){
+    .navbar-toggler{
+        visibility: hidden;
     }
-
-h3 {
-    font-family: 'Roboto', 'Oxygen', sans-serif; 
-    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 0;
-}
-
-/** Header  **/
-#nav-list a {
-    color: white;
-    text-align: center;
-    margin: 0;
-}
- 
-#nav-list a:hover {
-    background-color: #006400;
-}
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar  {
-    border: 1px solid white;
-}
-
-/** End Header **/
-
-/** Large devices only **/
-@media (min-width: 1200px)  {
-
-    .col-md-12 {
-    width: 100%;
-    }
-         
-}
-/** Medium devices only **/
-@media (min-width: 992px) and (max-width: 1199px)   {
-
-    .col-md-12 {
-    width: 100%;
-    } 
-}
-
-/** Small devices only **/
-@media (min-width: 769px) and (max-width: 991px)     {
-
-    .col-sm-12 {
-    width: 100%;
+    .row a {
+        visibility: hidden;
     }
 }
 
-/** Extra small devices only **/
-@media (max-width: 767px)   {
-
-    .col-xs-12 {
-    width: 100%;
+/****Small Devices****/
+@media (min-width: 767px) and (max-width: 1199px){
+    .navbar-toggler{
+        visibility: hidden;
     }
+    .row a {
+        visibility: hidden;
+    }
+    
+}
 
+/****Extra Small Devices****/
+@media (min-width:500px) and (max-width: 766px) {
+    #nav-list {
+        margin-top: 10px;
+      }
+    #nav-list a {
+        color: #ec6060;
+        text-align: center;
+      }
+    #nav-list a:hover{
+        background: #a79f9f;
+      }
+
+    .menu {
+        height: auto;
+        margin-bottom: 50px;
+    }
+    
+    
 }
